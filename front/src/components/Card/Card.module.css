@@ -1,0 +1,66 @@
+.CardContairner  {
+    /* background-color: rgb(96, 7, 151); */
+    width: 250px;
+    height: 600 px;
+    border-radius: 14px;
+    color: white;
+    border: 2px solid black;
+    cursor: pointer;    
+}
+
+.CardContairner:hover {
+    opacity: 0.5;
+}
+
+.header {
+    position: relative;
+
+}
+
+.wrapperText {
+    background-color: rgb(96, 7, 151);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 14px;
+}
+
+.name {
+    top: -50px;
+    left: 0px;
+    position: absolute;
+    background-color: white;
+    color: red;
+    opacity: .9;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 25px;
+    color: rgb(96, 7, 151);
+    opacity: 1;
+    text-decoration: none;
+}
+h2 {
+    font-size: 14px;
+}
+.wrapperButton {
+    position: absolute;
+    right: 0px;
+
+}
+
+img {
+    width: 100%;
+    border-radius: 14px;
+}
+
+.btn {
+    background-color: rgb(249, 104, 104);
+    border: none;
+    border-radius: 6px;
+}

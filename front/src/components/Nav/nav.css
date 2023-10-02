@@ -1,0 +1,15 @@
+.button-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: rgb(96, 7, 151); /* Color de fondo de los botones */
+    color: #fff; /* Color del texto */
+    text-decoration: none;
+    border-radius: 5px;
+    margin-right: 10px; /* Espacio entre los botones */
+    margin-top:10px;
+  }
+  
+  .button-link:hover {
+    background-color: rgb(206, 156, 237); /* Cambia el color de fondo al pasar el cursor */
+  }
+  

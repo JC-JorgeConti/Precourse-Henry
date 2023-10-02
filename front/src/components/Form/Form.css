@@ -1,0 +1,52 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Asegura que el formulario ocupe toda la altura de la ventana */
+    width: 100vh;
+    background-image: url('https://es.web.img3.acsta.net/pictures/18/10/31/17/34/2348073.jpg');
+    opacity: .8;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-left: 50vh;
+  }
+  
+ .login {
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo semi-transparente para el formulario */
+    padding: 30px;
+    border-radius: 10px;
+    /*box-shadow: 5 5 20px rgba(0, 0, 0, 0.2); /* Sombra alrededor del formulario */
+    text-align: center;
+    width: 50vh;
+  }
+  
+.label_login {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  button {
+    background-color: rgb(96, 7, 151);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: rgb(206, 156, 237);
+  }
+  
+  p {
+    color: red;
+    font-weight: bold;
+  }

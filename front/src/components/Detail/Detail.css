@@ -1,0 +1,23 @@
+/* Detail.css */
+.detail-container {
+  display: flex; /* Activa el modelo de caja flexible */
+  align-items: center; /* Centra verticalmente los elementos */
+}
+
+.detail-imagen {
+  max-width: 30%; /* Ancho máximo de la imagen */
+  margin-left: 20px; /* Espacio entre la imagen y el texto */
+  margin-right: 20px;
+}
+
+.detail-text {
+  background-color: white;
+  color: blue;
+  max-width: 25%;
+  align-items: center;
+  padding-left: 20px;
+  margin-left: 10px;
+  font-size: large;
+  border-radius: 10px;
+  flex-grow: 1; /* Permite que el texto ocupe todo el espacio disponible */
+}
