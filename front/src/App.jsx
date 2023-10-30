@@ -18,19 +18,34 @@ function App() {
   console.log(pathname);
  
   
- function onSearch(id) {
-  axios(`https://rickandmortyapi.com/api/character/${id}`)
-    .then(({ data }) => {
-      if (data.name) {
-        setCharacters((oldChars) => [...oldChars, data]);
-      } else {
-        window.alert('¡No hay personajes con este ID!');
-      }
-    })
-    .catch((error) => {
-      window.alert('¡No hay personajes con este ID!', error);
-    });
-}
+//  function onSearch(id) {
+//   {/* axios(`https://rickandmortyapi.com/api/character/${id}`)  */}
+//   axios(`http://localhost:3000/characters/${id}`)
+//     .then(({ data }) => {
+//       if (data.name) {
+//         setCharacters((oldChars) => [...oldChars, data]);
+//       } else {
+//         window.alert('¡No hay personajes con este ID!');
+//       }
+//     })
+//     .catch((error) => {
+//       window.alert('¡No hay personajes con este ID!', error);
+//     });
+// }
+
+const onSearch = async (id) => {
+  try {
+    const { data } = await axios(
+      `http://localhost:3000/characters/${id}`
+    );
+    if (data.name) {
+      setCharacters((oldChars) => [...oldChars, data]);
+    } else {
+      window.alert("¡No hay personajes con este ID!");
+    }
+  } catch (error) {
+    console.log(error);
+  }}
 
   const onClose = (id) => {
     setCharacters(

@@ -6,12 +6,14 @@ import {Link} from 'react-router-dom';
 
 const Card = (props) => {
   const {id, name, status, species, gender, origin, image, onClose} = props
+
+  
   return (
     <div className= {style.CardContairner}>
       <div className= {style.header}>
       <div className= {style.wrapperButton}>
       <button className= {style.btn} onClick={() => onClose(id)}>X</button>
-      </div>
+         </div>
       <img src={image} alt='imagen' />
     </div>
 
