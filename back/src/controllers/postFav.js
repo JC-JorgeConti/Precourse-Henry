@@ -2,6 +2,7 @@ const { Favorite } = require("../DB_connection");
 
 const postFav = async (req, res) => {
   try {
+    // Requerimos nuestra data por body
     const { name, origin, status, image, species, gender } = req.body;
 
     // Verificamos que toda nuestra base este llegando
